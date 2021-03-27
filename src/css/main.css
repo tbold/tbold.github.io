@@ -13,8 +13,10 @@
   --dark-slate:#22282c;
   --green: #b1f4cf;
   --purple: #9890e3;
-  --faint-green: #b1f4cf3d;
-  --faint-purple: #9890e348;
+  --faint-green: #ff7d974b;
+  --faint-purple: #8fa1fc8a;
+  --sunset-left: #FC5C7D;
+  --sunset-right: #6A82FB;
 }
 
 * {
@@ -28,6 +30,7 @@ body {
   position: relative;
   color: var(--slate);
 }
+
 
 h1 {
   padding: var(--base-px-lg) 0;
@@ -47,12 +50,13 @@ p {
 /* Landing */
 .landing {
   position: relative;
-  background: linear-gradient(to top, var(--purple) 0%, var(--green) 100%);
+  background: linear-gradient(to top, var(--sunset-left) 0%, var(--sunset-right) 100%);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  color: whitesmoke;
 }
 
 .content {
@@ -63,8 +67,9 @@ p {
 }
 
 .headings {
-  text-align: left;
+  text-align: right;
   align-self: center;
+  padding-right: var(--base-px-m);
 }
 
 .main-title {
@@ -110,8 +115,9 @@ p {
 
 /* Contact */
 .contact {
-  background: linear-gradient(to top, var(--green) 0%, var(--purple) 100%);
+  background: linear-gradient(to top, var(--sunset-left) 0%, var(--sunset-right) 100%);
   margin-top: var(--base-px-xlg);
+  color: whitesmoke;
 }
 
 .socials {
@@ -136,4 +142,8 @@ footer {
   text-align: center;
   padding: var(--base-px-sm);
   font-size: 75%;
+}
+
+.landing img {
+  width: 150%;
 }
